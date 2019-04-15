@@ -1,5 +1,6 @@
 package com.example.famous_dave.fishtracker.main;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.MvpV
     public void navigateToSignIn() {
 
         Toast.makeText(this, "signin screen", Toast.LENGTH_SHORT).show();
+
+        Intent i = new Intent(this, SignInActivity.class);
+
     }
 
     @Override
