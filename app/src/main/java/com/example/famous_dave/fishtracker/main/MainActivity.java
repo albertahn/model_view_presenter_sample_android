@@ -33,9 +33,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.MvpV
     public void navigateToSignIn() {
 
         Toast.makeText(this, "signin screen", Toast.LENGTH_SHORT).show();
-
         Intent i = new Intent(this, SignInActivity.class);
-
+            startActivity(i);
     }
 
     @Override
